@@ -16,7 +16,10 @@ dbConfig.connectDB();
 // CORS sozlamalari
 const corsOptions = {
   origin: [
-    "http://localhost:3000", // Backend lokal
+    "http://localhost:3000",
+
+    "https://38-f.vercel.app/", // Frontend
+    // Backend lokal
   ],
   methods: ["GET", "POST", "PUT", "DELETE"], // Ruxsat etilgan HTTP metodlar
   credentials: true, // Cookie va autentifikatsiya uchun ruxsat
